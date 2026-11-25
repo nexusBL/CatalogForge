@@ -2,7 +2,7 @@
 
 > **Enterprise AI-Powered Restaurant Catalogue SaaS, Quality Auditing & Optimization Platform**
 
-CatalogForge (internally codenamed *HectoBaba / Baba AI*) is an end-to-end catalogue management and quality intelligence platform for restaurant owners, cloud kitchen operators, and multi-brand franchise directors. It ingests, standardizes, evaluates, and optimizes restaurant menus from food-delivery aggregators (**Swiggy**, **Zomato**, **Magicpin**) and direct inputs.
+CatalogForge  is an end-to-end catalogue management and quality intelligence platform for restaurant owners, cloud kitchen operators, and multi-brand franchise directors. It ingests, standardizes, evaluates, and optimizes restaurant menus from food-delivery aggregators (**Swiggy**, **Zomato**, **Magicpin**) and direct inputs.
 
 The system features an automated multi-stage grading engine (`grading.v1`), an anti-hallucination local Large Language Model assistant (**Baba AI** powered by local Ollama `llama3:latest`), an in-house Media Studio, and an optimistic concurrency mutation engine with field-level edit history and 1-click atomic rollback.
 
