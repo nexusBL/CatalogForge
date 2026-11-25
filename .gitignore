@@ -1,0 +1,42 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node dependencies
+node_modules/
+auth/node_modules/
+frontend/node_modules/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# Python cache & virtual environments
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# Databases & local SQLite
+*.sqlite
+*.sqlite3
+*.db
+catalogforge.db
+auth/data/
+
+# Runtime data & generated media (prevents large binary commits)
+data/
+output/
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.cursor/

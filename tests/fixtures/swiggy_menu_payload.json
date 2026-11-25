@@ -1,0 +1,152 @@
+{
+  "statusCode": 0,
+  "data": {
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "999001",
+              "name": "Harbor Spice House",
+              "city": "Mangaluru",
+              "cloudinaryImageId": "test/restaurant-image",
+              "locality": "Sample Road",
+              "areaName": "Sample Area",
+              "costForTwo": 120000,
+              "costForTwoMessage": "₹1200 for two",
+              "cuisines": ["Coastal", "North Indian"],
+              "avgRating": 4.4,
+              "totalRatingsString": "1K+",
+              "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+              }
+            }
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                      "title": "Lunch Combos",
+                      "categories": [
+                        {
+                          "title": "Veg Combos",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "info": {
+                                  "id": "m1",
+                                  "name": "Coastal Thali",
+                                  "description": "Rice, curry and sides",
+                                  "imageId": "test/item-thali",
+                                  "price": 34900,
+                                  "defaultPrice": 39900,
+                                  "isVeg": 1,
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG",
+                                    "portionSize": "Serves 1"
+                                  },
+                                  "ribbon": { "text": "Bestseller" },
+                                  "ratings": {
+                                    "aggregatedRating": {
+                                      "rating": "4.5",
+                                      "ratingCountV2": "80"
+                                    }
+                                  },
+                                  "addons": [
+                                    {
+                                      "groupId": "g1",
+                                      "groupName": "Add ons",
+                                      "choices": [
+                                        { "id": "c1", "name": "Extra Raita", "price": 3000, "isVeg": 1 }
+                                      ]
+                                    }
+                                  ],
+                                  "variantsV2": {
+                                    "variantGroups": [
+                                      {
+                                        "name": "Size",
+                                        "variations": [
+                                          { "name": "Regular", "price": 34900 },
+                                          { "name": "Large", "price": 44900 }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "nutrients": { "calories": "720 kcal" }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Breads",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "m2",
+                              "name": "Butter Naan",
+                              "description": "Tandoor baked",
+                              "imageId": "test/item-naan",
+                              "price": 7000,
+                              "isVeg": 1,
+                              "itemAttribute": { "vegClassifier": "VEG" }
+                            }
+                          }
+                        },
+                        {
+                          "card": {
+                            "info": {
+                              "id": "m2",
+                              "name": "Butter Naan",
+                              "description": "Tandoor baked",
+                              "imageId": "test/item-naan",
+                              "price": 7000,
+                              "isVeg": 1
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      "text": ["FSSAI License No.", "12345678901234"]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "completeAddress": "1 Sample Road, Sample Area, Mangaluru"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

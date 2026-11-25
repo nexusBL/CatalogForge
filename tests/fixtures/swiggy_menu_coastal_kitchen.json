@@ -1,0 +1,146 @@
+{
+  "statusCode": 0,
+  "data": {
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "888100",
+              "name": "Coastal Kitchen",
+              "city": "Mangaluru",
+              "cloudinaryImageId": "test/coastal-kitchen",
+              "locality": "Harbor Road",
+              "areaName": "Panambur",
+              "costForTwo": 90000,
+              "costForTwoMessage": "₹900 for two",
+              "cuisines": ["Seafood", "Mangalorean"],
+              "avgRating": 4.2,
+              "totalRatingsString": "500+"
+            }
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Tandoor",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "ck1",
+                              "name": "Tandoori Pomfret",
+                              "description": "Whole fish, charcoal grilled",
+                              "imageId": "test/pomfret",
+                              "price": 49900,
+                              "isVeg": 0,
+                              "itemAttribute": { "vegClassifier": "NONVEG" },
+                              "ribbon": { "text": "Must Try" },
+                              "isRecommended": true,
+                              "variantsV2": {
+                                "variantGroups": [
+                                  {
+                                    "name": "Spice",
+                                    "variations": [
+                                      { "name": "Mild", "price": 49900 },
+                                      { "name": "Spicy", "price": 51900 }
+                                    ]
+                                  }
+                                ]
+                              },
+                              "addons": [
+                                {
+                                  "groupId": "ckg1",
+                                  "groupName": "Sides",
+                                  "choices": [
+                                    { "id": "cks1", "name": "Butter Naan", "price": 4000, "isVeg": 1 }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Seafood",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "ck2",
+                              "name": "Prawn Ghee Roast",
+                              "description": "Coastal masala, ghee",
+                              "imageId": "test/prawn-ghee-roast",
+                              "price": 38900,
+                              "isVeg": 0,
+                              "itemAttribute": { "vegClassifier": "NONVEG" }
+                            }
+                          }
+                        },
+                        {
+                          "card": {
+                            "info": {
+                              "id": "ck2",
+                              "name": "Prawn Ghee Roast",
+                              "description": "Coastal masala, ghee",
+                              "imageId": "test/prawn-ghee-roast",
+                              "price": 38900,
+                              "isVeg": 0
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuCarousel",
+                      "title": "Rice",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "info": {
+                              "id": "ck3",
+                              "name": "Neer Dosa",
+                              "price": 8000,
+                              "isVeg": 1,
+                              "itemAttribute": { "vegClassifier": "VEG" }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "completeAddress": "12 Harbor Road, Panambur, Mangaluru"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

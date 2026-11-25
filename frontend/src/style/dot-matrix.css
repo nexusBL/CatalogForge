@@ -1,0 +1,13 @@
+.dot-matrix {
+  background-size: 8px 8px;
+  background-color: transparent;
+  mask-image: radial-gradient(
+    80% 70% at 50% 50%,
+    var(--background) 0%,
+    transparent 90%
+  );
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--foreground) 40%, transparent) 0.5px,
+    transparent 0.5px
+  );
+}

@@ -1,0 +1,3 @@
+from scraper.magicpin.parser import parse_magicpin_catalogue
+
+parse_magicpin_dineout = parse_magicpin_catalogue

@@ -1,0 +1,152 @@
+/* Radix gray scales inlined. Do not @import @radix-ui/colors CSS after @tailwind —
+   that combination can make Next.js/PostCSS compile indefinitely, so the server
+   listens on :3000 but never becomes ready. */
+:root {
+  --gray-1: #fcfcfc;
+  --gray-2: #f9f9f9;
+  --gray-3: #f0f0f0;
+  --gray-4: #e8e8e8;
+  --gray-5: #e0e0e0;
+  --gray-6: #d9d9d9;
+  --gray-7: #cecece;
+  --gray-8: #bbbbbb;
+  --gray-9: #8d8d8d;
+  --gray-10: #838383;
+  --gray-11: #646464;
+  --gray-12: #202020;
+}
+
+.dark {
+  --gray-1: #111111;
+  --gray-2: #191919;
+  --gray-3: #222222;
+  --gray-4: #2a2a2a;
+  --gray-5: #313131;
+  --gray-6: #3a3a3a;
+  --gray-7: #484848;
+  --gray-8: #606060;
+  --gray-9: #6e6e6e;
+  --gray-10: #7b7b7b;
+  --gray-11: #b4b4b4;
+  --gray-12: #eeeeee;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: var(--gray-2);
+    --foreground: var(--gray-12);
+    --card: var(--gray-1);
+    --card-foreground: var(--gray-12);
+    --popover: var(--gray-1);
+    --popover-foreground: var(--gray-12);
+    --primary: var(--gray-12);
+    --primary-foreground: var(--gray-1);
+    --primary-hover: var(--gray-11);
+    --secondary: var(--gray-3);
+    --secondary-foreground: var(--gray-12);
+    --muted: var(--gray-3);
+    --muted-foreground: var(--gray-11);
+    --accent: var(--gray-3);
+    --accent-foreground: var(--gray-12);
+    --destructive: #e5484d;
+    --destructive-foreground: var(--gray-1);
+    --border: var(--gray-6);
+    --input: var(--gray-4);
+    --ring: var(--gray-12);
+    --selected: var(--gray-4);
+    --sidebar: var(--gray-3);
+    --header: var(--gray-1);
+    --radius: 0.5rem;
+    --chart-1: var(--gray-12);
+    --chart-2: var(--gray-11);
+    --chart-3: var(--gray-9);
+    --chart-4: var(--gray-6);
+    --chart-5: var(--gray-4);
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: var(--gray-12);
+    --card: #0a0a0a;
+    --card-foreground: var(--gray-12);
+    --popover: #0a0a0a;
+    --popover-foreground: var(--gray-12);
+    --primary: var(--gray-12);
+    --primary-foreground: #111111;
+    --primary-hover: var(--gray-11);
+    --secondary: var(--gray-2);
+    --secondary-foreground: var(--gray-12);
+    --muted: var(--gray-2);
+    --muted-foreground: var(--gray-11);
+    --accent: var(--gray-3);
+    --accent-foreground: var(--gray-12);
+    --destructive: #e5484d;
+    --destructive-foreground: var(--gray-12);
+    --border: var(--gray-6);
+    --input: var(--gray-2);
+    --ring: var(--gray-11);
+    --selected: var(--gray-3);
+    --sidebar: #050505;
+    --header: #000000;
+    --chart-1: var(--gray-12);
+    --chart-2: var(--gray-11);
+    --chart-3: var(--gray-9);
+    --chart-4: var(--gray-6);
+    --chart-5: var(--gray-3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.baba-spark-pulse {
+  animation: baba-spark-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes baba-spark-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.dot-matrix {
+  background-size: 8px 8px;
+  background-color: transparent;
+  mask-image: radial-gradient(
+    80% 70% at 50% 50%,
+    var(--background) 0%,
+    transparent 90%
+  );
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--foreground) 40%, transparent) 0.5px,
+    transparent 0.5px
+  );
+}
+
+@keyframes stripe-move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 0;
+  }
+}
+
+.animate-stripe {
+  animation: stripe-move 1s linear infinite;
+}
+
